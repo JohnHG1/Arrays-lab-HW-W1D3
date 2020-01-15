@@ -118,15 +118,13 @@ users = {
 # 8. Change Erik's hometown to Edinburgh
       users[:"Erik"]["hometown"] = "Edinburgh"
 # 9. Add a pet dog to Erik called "Fluffy"
- {
-  :name => "Fluffy",
-  :species => "dog"
- }
+    users[:"Erik"]["pets"].push(name: "Fluffy", species: "dog")
+
 # 10. Add another person to the users hash
 "Bob" => {
   :twitter => "spongebob",
   :lottery_numbers => [22, 13, 43, 18, 19, 5],
-  :home_town => "Gullane",
+  :home_town => "Gullane"
   :pets => [
     {
       :name => "dug",
@@ -159,6 +157,12 @@ united_kingdom = [
 ### Complete these tasks:
 
 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
+  united_kingdom[:"Wales"]["capital"] = "Cardiff"
 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
+{
+  name: "Northern Ireland",
+  population: 1811000,
+  capital: "Belfast"
+}
 3. Use a loop to print the names of all the countries in the UK.
 4. Use a loop to find the total population of the UK.
