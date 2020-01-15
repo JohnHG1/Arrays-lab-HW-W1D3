@@ -164,9 +164,16 @@ united_kingdom = [
      population: 1811000,
      capital: "Belfast"
     }
-
 #3. Use a loop to print the names of all the countries in the UK.
     for name in united_kingdom
     p name
     end
 #4. Use a loop to find the total population of the UK.
+population = 0
+for total population in united_kingdom
+   total_population +=[:population]
+  total_population[:population] = 0
+end
+p population.to_s + " total population"
+end
+Arrrrrghhh 
