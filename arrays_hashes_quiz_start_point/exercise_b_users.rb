@@ -54,6 +54,7 @@ users = {
   }
 }
 
+### Complete these tasks:
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
     p users[:"Jonathan"][:twitter]
 # 2. Get Erik's hometown
@@ -66,11 +67,27 @@ users = {
     p users[:"Erik"][:lottery_numbers].min()
 # 6. Return an array of Avril's lottery numbers that are even
       p users[:"Avril"][:lottery_numbers]
-      if user % 2 == 0
-        puts x
-  end
+      if users % 2 == 0
+        p users
+         else end
+        end
+        OR
+      chunks = array.chunk(&:even?).to_a
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
-
+    p users[:"Erik"][:lottery_numbers].push("7")
 # 8. Change Erik's hometown to Edinburgh
+      users[:"Erik"]["hometown"] = "Edinburgh"
 # 9. Add a pet dog to Erik called "Fluffy"
+    users[:"Erik"]["pets"].push(name: "Fluffy", species: "dog")
+
 # 10. Add another person to the users hash
+"Bob" => {
+  :twitter => "spongebob",
+  :lottery_numbers => [22, 13, 43, 18, 19, 5],
+  :home_town => "Gullane"
+  :pets => [
+    {
+      :name => "dug",
+      :species => "dog"
+    }
+  ]
