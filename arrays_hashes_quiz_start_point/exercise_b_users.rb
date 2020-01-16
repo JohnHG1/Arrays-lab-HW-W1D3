@@ -56,38 +56,37 @@ users = {
 
 ### Complete these tasks:
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
-    p users[:"Jonathan"][:twitter]
+    p users["Jonathan"][:twitter]
 # 2. Get Erik's hometown
-    p users[:"Erik"][:home_town]
+    p users["Erik"][:home_town]
 # 3. Get the array of Erik's lottery numbers
-    p users[:"Erik"][:lottery_numbers]
+    p users["Erik"][:lottery_numbers]
 # 4. Get the species of Avril's pet Monty
-    p users[:"Avril"][:pets][0][:species]
+    p users["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
-    p users[:"Erik"][:lottery_numbers].min()
+    p users["Erik"][:lottery_numbers].min()
 # 6. Return an array of Avril's lottery numbers that are even
-      p users[:"Avril"][:lottery_numbers]
+      p users["Avril"][:lottery_numbers]
       if users % 2 == 0
-        p users
-         else end
+        even_numbers.push(number)
         end
-        OR
-      chunks = array.chunk(&:even?).to_a
+end
+        
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
-    p users[:"Erik"][:lottery_numbers].push("7")
+    p users["Erik"][:lottery_numbers].push(7)
+
 # 8. Change Erik's hometown to Edinburgh
-      users[:"Erik"]["hometown"] = "Edinburgh"
+      users["Erik"][":hometown"] = "Edinburgh"
+      p users ["Erik"]
 # 9. Add a pet dog to Erik called "Fluffy"
-    users[:"Erik"]["pets"].push(name: "Fluffy", species: "dog")
+    users["Erik"]["pets"].push({name: "Fluffy", species: "dog"})
+    p users["Erik"][:pets]
 
 # 10. Add another person to the users hash
-"Bob" => {
-  :twitter => "spongebob",
-  :lottery_numbers => [22, 13, 43, 18, 19, 5],
-  :home_town => "Gullane"
-  :pets => [
-    {
-      :name => "dug",
-      :species => "dog"
-    }
+  users["Bob"] = {
+  twitter: "spongebob",
+  lottery_numbers: [22, 13, 43, 18, 19, 5],
+  home_town: "Gullane"
+      }
   ]
